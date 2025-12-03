@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Libre Baskerville", serif;
+}
+
+:root {
+  /* EFK Identity Palette */
+  /* Deep Blue (Shield) - Authority, History */
+  --primary: 215 60% 25%; 
+  --primary-foreground: 0 0% 100%;
+
+  /* Gold/Ochre (Background) - Warmth, Celebration */
+  --secondary: 42 65% 85%; 
+  --secondary-foreground: 215 60% 20%;
+
+  /* Terracotta Red (Scroll) - Accent */
+  --accent: 10 65% 50%;
+  --accent-foreground: 0 0% 100%;
+
+  /* Neutral Backgrounds */
+  --background: 40 30% 98%; /* Very light warm paper tone */
+  --foreground: 215 40% 15%; /* Dark blue-grey for text */
+
+  --card: 0 0% 100%;
+  --card-foreground: 215 40% 15%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 215 40% 15%;
+  
+  --muted: 40 20% 92%;
+  --muted-foreground: 215 20% 40%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 215 20% 90%;
+  --input: 215 20% 90%;
+  --ring: 215 60% 25%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* Dark Mode Adaptation - Richer, deeper tones */
+  --background: 215 50% 10%;
+  --foreground: 40 30% 90%;
+
+  --primary: 42 65% 60%; /* Gold becomes primary in dark mode for visibility */
+  --primary-foreground: 215 60% 15%;
+
+  --secondary: 215 40% 20%;
+  --secondary-foreground: 40 30% 90%;
+
+  --accent: 10 65% 55%;
+  --accent-foreground: 0 0% 100%;
+
+  --card: 215 50% 12%;
+  --card-foreground: 40 30% 90%;
+  
+  --popover: 215 50% 12%;
+  --popover-foreground: 40 30% 90%;
+  
+  --muted: 215 40% 20%;
+  --muted-foreground: 215 20% 65%;
+  
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 215 40% 20%;
+  --input: 215 40% 20%;
+  --ring: 42 65% 60%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold tracking-tight;
+  }
+}
+
+/* Custom Utility Class for the "Parchment" feel if needed */
+.bg-parchment {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d1a054' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
