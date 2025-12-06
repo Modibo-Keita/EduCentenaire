@@ -3,36 +3,64 @@ import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
-import tribute1 from "@assets/generated_images/portrait_of_old_malian_teacher_1950s.png";
-import tribute2 from "@assets/generated_images/portrait_of_first_female_student_1940s.png";
-import tribute3 from "@assets/generated_images/portrait_of_strict_headmaster_1960s.png";
-import tribute4 from "@assets/generated_images/portrait_of_legendary_teacher_1980s.png";
+import tribute1 from "@assets/EFK_Images/Img_directeur_Sy.jpg";
+import tribute2 from "@assets/EFK_Images/Img_leck-sangare.jpg";
+import tribute3 from "@assets/EFK_Images/img_Madeira-Keita.jpg";
+import tribute4 from "@assets/EFK_Images/Img_Harimakan-Keita.jpg";
+import tribute5 from "@assets/generated_images/portrait_of_legendary_teacher_1980s.png";
+import tribute6 from "@assets/generated_images/malian_professional_woman_portrait.png";
+import tribute7 from "@assets/generated_images/portrait_of_first_female_student_1940s.png";
 
 const tributes = [
   {
-    name: "Mamadou Sissoko",
-    role: "Instituteur (1952-1985)",
+    name: "Directeur Aliou SY",
+    role: "Instituteur (2008-2015)",
     image: tribute1,
-    quote: "L'éducation est l'arme la plus puissante pour changer le monde. J'ai consacré ma vie à affûter l'esprit de la jeunesse de Kourouninkoto."
+    quote:
+      "L'éducation est l'arme la plus puissante pour changer le monde. J'ai consacré ma vie à affûter l'esprit de la jeunesse de Kourouninkoto.",
   },
   {
     name: "Aminata Diallo",
     role: "Première Bachelière (Promo 1948)",
-    image: tribute2,
-    quote: "Être la première fille à obtenir mon certificat fut une fierté immense. J'ai ouvert la voie pour mes sœurs, et aujourd'hui, elles sont médecins, ingénieures, enseignantes."
+    image: tribute7,
+    quote:
+      "Être la première fille à obtenir mon certificat fut une fierté immense. J'ai ouvert la voie pour mes sœurs, et aujourd'hui, elles sont médecins, ingénieures, enseignantes.",
   },
   {
-    name: "Directeur Koné",
+    name: "Monsieur Bagayoko",
     role: "Directeur d'École (1960-1975)",
     image: tribute3,
-    quote: "La discipline et le respect sont les fondations du savoir. Sous mon arbre à palabres, nous avons réglé bien des conflits et construit bien des avenirs."
+    quote:
+      "La discipline et le respect sont les fondations du savoir. Sous mon arbre à palabres, nous avons réglé bien des conflits et construit bien des avenirs.",
+  },
+  {
+    name: "Madame Bassira",
+    role: "Professeur de Mathématiques (1980-2010)",
+    image: tribute4,
+    quote:
+      "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout.",
+  },
+  {
+    name: "M.Leck Sangare",
+    role: "Professeur de Mathématiques (1980-2010)",
+    image: tribute2,
+    quote:
+      "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout.",
   },
   {
     name: "Moussa Traoré",
     role: "Professeur de Mathématiques (1980-2010)",
-    image: tribute4,
-    quote: "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout."
-  }
+    image: tribute6,
+    quote:
+      "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout.",
+  },
+  {
+    name: "Apegnon Dolo",
+    role: "Professeur de Mathématiques (1980-2010)",
+    image: tribute5,
+    quote:
+      "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout.",
+  },
 ];
 
 export default function Tributes() {

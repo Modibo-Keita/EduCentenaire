@@ -1,32 +1,53 @@
 import { Layout } from "@/components/layout";
 import { Quote } from "lucide-react";
-import testimonial1 from "@assets/generated_images/malian_elder_portrait_professional.png";
-import testimonial2 from "@assets/generated_images/malian_professional_woman_portrait.png";
-import testimonial3 from "@assets/generated_images/young_malian_graduate_portrait.png";
+import testimonial1 from "@assets/EFK_Images/Img_koto-traore.jpg";
+import testimonial2 from "@assets/EFK_Images/img_Madeira-Keita.jpg";
+import testimonial3 from "@assets/EFK_Images/Img_directeur_Sy.jpg";
+import testimonial4 from "@assets/EFK_Images/Img_Harimakan-Keita.jpg";
+import testimonial5 from "@assets/EFK_Images/Img_leck-sangare.jpg";
 
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Amadou Keïta",
+      name: "Koto Traore",
       promotion: "Promotion 1965",
       role: "Ancien Ministre",
       image: testimonial1,
-      quote: "L'EFK a été le fondement de tout ce que j'ai accompli. C'est ici que j'ai appris non seulement à lire et écrire, mais aussi les valeurs de rigueur et de service à la communauté qui ne m'ont jamais quitté."
+      quote:
+        "L'EFK a été le fondement de tout ce que j'ai accompli. C'est ici que j'ai appris non seulement à lire et écrire, mais aussi les valeurs de rigueur et de service à la communauté qui ne m'ont jamais quitté.",
     },
     {
-      name: "Fatoumata Traoré",
+      name: "Madeira Keita",
       promotion: "Promotion 1988",
       role: "Médecin Chef",
       image: testimonial2,
-      quote: "Je me souviens encore de Monsieur Diallo, mon instituteur en 4ème année. Sa passion pour les sciences a allumé une étincelle en moi. Aujourd'hui, je soigne des vies grâce à cette première impulsion reçue à Kourouninkoto."
+      quote:
+        "Je me souviens encore de Monsieur Diallo, mon instituteur en 4ème année. Sa passion pour les sciences a allumé une étincelle en moi. Aujourd'hui, je soigne des vies grâce à cette première impulsion reçue à Kourouninkoto.",
     },
     {
-      name: "Moussa Diarra",
+      name: "Aliou Sy Savané",
       promotion: "Promotion 2010",
       role: "Entrepreneur Tech",
       image: testimonial3,
-      quote: "L'école a toujours su évoluer avec son temps. C'est la bibliothèque de l'EFK qui m'a ouvert au monde. Fêter ce centenaire, c'est célébrer un siècle d'opportunités offertes à la jeunesse rurale."
-    }
+      quote:
+        "L'école a toujours su évoluer avec son temps. C'est la bibliothèque de l'EFK qui m'a ouvert au monde. Fêter ce centenaire, c'est célébrer un siècle d'opportunités offertes à la jeunesse rurale.",
+    },
+    {
+      name: "Aliou Sy Savané",
+      promotion: "Promotion 2010",
+      role: "Entrepreneur Tech",
+      image: testimonial4,
+      quote:
+        "L'école a toujours su évoluer avec son temps. C'est la bibliothèque de l'EFK qui m'a ouvert au monde. Fêter ce centenaire, c'est célébrer un siècle d'opportunités offertes à la jeunesse rurale.",
+    },
+    {
+      name: "Aliou Sy Savané",
+      promotion: "Promotion 2010",
+      role: "Entrepreneur Tech",
+      image: testimonial5,
+      quote:
+        "L'école a toujours su évoluer avec son temps. C'est la bibliothèque de l'EFK qui m'a ouvert au monde. Fêter ce centenaire, c'est célébrer un siècle d'opportunités offertes à la jeunesse rurale.",
+    },
   ];
 
   return (

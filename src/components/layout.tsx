@@ -110,12 +110,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-12 border-t border-accent/20">
+      <footer className="bg-primary text-primary-foreground py-12 border-t border-accent/20 foter">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
               <img src={logo} alt="EFK Logo" className="h-10 brightness-0 invert opacity-80" />
-              <span className="font-serif font-bold text-xl">EFK 1925</span>
+              <span className="font-serif font-bold text-xl">EFK - 1925</span>
             </div>
             <p className="text-sm text-primary-foreground/70 max-w-xs mx-auto md:mx-0">
               Célébrons un siècle d'éducation, de transmission et d'avenir à Kourouninkoto, Mali.
@@ -134,15 +134,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <h3 className="font-serif font-bold mb-4 text-secondary">Contact</h3>
             <address className="text-sm not-italic text-primary-foreground/70 space-y-2">
-              <p>Kourouninkoto, Cercle de Kita</p>
+              <p>Kourouninkoto, Bagué - Kaarta </p>
               <p>Région de Kita, Mali</p>
-              <p className="mt-4">Email: contact@efk-centenaire.ml</p>
+              <p className="mt-4">Email: keitavan@outlook.fr</p>
             </address>
           </div>
         </div>
         <div className="container mx-auto px-4 mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center text-xs text-primary-foreground/50">
           <p>© 2025 École Fondamentale de Kourouninkoto. Tous droits réservés.</p>
-          <p className="mt-2 md:mt-0">Développé par Modibo D Keita</p>
+          <p className="mt-2 md:mt-0">Développé par Modibo D. Keita</p>
         </div>
       </footer>
 

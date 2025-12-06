@@ -8,12 +8,12 @@ export default function Travel() {
   const steps = [
     { city: "Bamako", distance: "0 km", type: "start", description: "Départ de la capitale" },
     { city: "Kati", distance: "15 km", type: "step", description: "Ville garnison" },
-    { city: "Kassaro", distance: "120 km", type: "step", description: "Escale traditionnelle" },
+    { city: "Kassaro", distance: "120 km", type: "step", description: "Pause toilettte" },
     { city: "Badinko", distance: "160 km", type: "step", description: "Paysage de savane" },
     { city: "Kita", distance: "185 km", type: "major", description: "Capitale de l'arachide" },
-    { city: "Djidian", distance: "230 km", type: "step", description: "Zone forestière" },
-    { city: "Mambiri", distance: "270 km", type: "step", description: "Dernière étape" },
-    { city: "Kourouninkoto", distance: "300 km", type: "end", description: "Bienvenue à l'EFK !" },
+    { city: "Djidian", distance: "230 km", type: "step", description: "Avant-dernière étape" },
+    { city: "Mambiri", distance: "270 km", type: "step", description: "Forêt boucle du baoulé" },
+    { city: "Kourouninkoto", distance: "300 km", type: "end", description: "Bienvenue au centenaire !" },
   ];
 
   return (

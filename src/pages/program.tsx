@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar, Clock, MapPin, Music, TreePine, Trophy, Mic2, HandHeart } from "lucide-react";
-import celebrationImg from "@assets/generated_images/malian_cultural_celebration_ceremony.png";
+import celebrationImg from "@assets/EFK_Images/img_fete_kkoto.jpeg";
 
 export default function Program() {
   const days = [

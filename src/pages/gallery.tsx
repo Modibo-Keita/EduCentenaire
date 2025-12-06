@@ -7,13 +7,33 @@ import archive1 from "@assets/generated_images/vintage_1930s_malian_classroom_bl
 import archive2 from "@assets/generated_images/vintage_1950s_school_courtyard_mali.png";
 import archive3 from "@assets/generated_images/vintage_1970s_class_photo_mali.png";
 import archive4 from "@assets/generated_images/old_library_books_mali_school.png";
+import archive5 from "@assets/EFK_Images/img_Madeira-Keita.jpg";
+import archive6 from "@assets/EFK_Images/img_fete_kkoto.jpeg";
+import archive7 from "@assets/EFK_Images/Img_ecole-classe.jpg";
+import archive8 from "@assets/EFK_Images/Img_ecole_cours.jpg";
+import archive9 from "@assets/EFK_Images/img_fete_kkoto_2_.jpg";
+import archive10 from "@assets/EFK_Images/img_kkoto_cscom.jpeg";
 
 // Mock data for gallery categories
 const archives = [
   { src: archive1, title: "La première classe (1930)", category: "1925-1950" },
-  { src: archive2, title: "Récréation dans la cour (1955)", category: "1950-1975" },
-  { src: archive3, title: "Promotion 'Indépendance' (1970)", category: "1950-1975" },
+  {
+    src: archive2,
+    title: "Récréation dans la cour (1955)",
+    category: "1950-1975",
+  },
+  {
+    src: archive3,
+    title: "Promotion 'Indépendance' (1970)",
+    category: "1950-1975",
+  },
   { src: archive4, title: "L'ancienne bibliothèque", category: "1925-1950" },
+  { src: archive5, title: "L'ancienne bibliothèque", category: "1925-1950" },
+  { src: archive6, title: "L'ancienne bibliothèque", category: "1950-1975" },
+  { src: archive7, title: "L'ancienne bibliothèque", category: "1925-1950" },
+  { src: archive8, title: "L'ancienne bibliothèque", category: "1950-1975" },
+  { src: archive9, title: "L'ancienne bibliothèque", category: "1950-1975" },
+  { src: archive10, title: "L'ancienne bibliothèque", category: "1925-1950" },
 ];
 
 export default function Gallery() {

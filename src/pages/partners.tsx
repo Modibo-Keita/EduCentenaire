@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Handshake, GraduationCap, Scale, Heart } from "lucide-react";
 import { Link } from "wouter";
-import emblem from "@assets/generated_images/malian_official_seal_emblem.png";
-import lawyer from "@assets/generated_images/portrait_of_malian_lawyer_professional.png";
+import emblem from "@assets/EFK_Images/logo_gouv-mali.jpeg";
+import lawyer from "@assets/EFK_Images/Img_koto-traore.jpg";
 import marraine from "@assets/generated_images/portrait_of_malian_female_leader_professional.png";
 
 export default function Partners() {

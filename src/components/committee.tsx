@@ -31,7 +31,7 @@ export function Committee() {
                 </div>
 
                 <div className="flex gap-8 items-start mb-6">
-                  <div className="flex-shrink-0">
+                  <div className="shrink-0">
                     <img 
                       src={presidentImg}
                       alt="Mamounou Touré, Président du Comité"
@@ -39,7 +39,7 @@ export function Committee() {
                     />
                   </div>
                   
-                  <blockquote className="text-lg text-foreground leading-relaxed space-y-4 font-light italic flex-1">
+                  <blockquote className="text-lg text-foreground leading-relaxed space-y-4 font-light italic flex-1 mr-6">
                   <p>
                     "Chères amies, chers amis, anciens et futures élèves,
                   </p>
