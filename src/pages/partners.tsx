@@ -14,7 +14,7 @@ export default function Partners() {
       <div className="bg-background min-h-screen py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <Badge variant="outline" className="mb-4 border-primary/20 text-primary tracking-widest uppercase">
+            <Badge variant="outline" className="mb-4 border-primary/20 text-orange-600 tracking-widest uppercase">
               Ils nous soutiennent
             </Badge>
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
@@ -63,7 +63,7 @@ export default function Partners() {
                     <img src={marraine} alt="Dado Bassy" className="w-full h-full object-cover" />
                   </div>
                   <Badge className="bg-secondary text-primary mb-3">Marraine du Centenaire</Badge>
-                  <h2 className="text-2xl font-serif font-bold text-primary mb-1">Mme Dado Bassy</h2>
+                  <h2 className="text-2xl font-serif font-bold text-primary mb-1">Mme Fatoumata Batouly</h2>
                   <p className="text-muted-foreground font-medium mb-4 flex items-center justify-center gap-2">
                     <Heart className="w-4 h-4" /> Figure Communautaire
                   </p>

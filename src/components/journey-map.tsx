@@ -2,11 +2,11 @@ export function JourneyMap() {
   const waypoints = [
     { name: "Bamako", distance: "0 km", time: "Départ", description: "Capitale du Mali" },
     { name: "Kati", distance: "15 km", time: "20 min", description: "Ville garnison" },
-    { name: "Kassaro", distance: "120 km", time: "1h30", description: "Escale traditionnelle" },
+    { name: "Kassaro", distance: "120 km", time: "1h30", description: "Escale déjeûner" },
     { name: "Badinko", distance: "160 km", time: "2h30", description: "Paysage de savane" },
     { name: "Kita", distance: "185 km", time: "3h", description: "Capitale de l'arachide" },
-    { name: "Djidian", distance: "230 km", time: "4h30", description: "Zone forestière" },
-    { name: "Mambiri", distance: "270 km", time: "5h30", description: "Dernière étape" },
+    { name: "Djidian", distance: "230 km", time: "4h30", description: "Avant dernière étape" },
+    { name: "Mambiri", distance: "270 km", time: "5h30", description: "Forêt boucle du baoulé" },
     { name: "Kourouninkoto", distance: "300 km", time: "~7h", description: "Destination finale" },
   ];
 
@@ -16,7 +16,7 @@ export function JourneyMap() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
-              Tracez votre Itinéraire
+              L'itinéraire qui vous mène jusqu'à Kourouninkoto 👇
             </h2>
             <p className="text-muted-foreground text-lg">
               Route Bamako → Kourouninkoto (300 km, ~7 heures de voyage)
@@ -35,7 +35,7 @@ export function JourneyMap() {
                   {waypoints.map((point, index) => (
                     <div key={point.name} className="relative pl-24 group">
                       {/* Circle */}
-                      <div className={`absolute left-0 top-1 w-12 h-12 rounded-full flex items-center justify-center font-bold text-white border-4 border-background shadow-lg transition-all group-hover:scale-110 ${
+                      <div className={`absolute left-0 top-1 w-12 h-12 rounded-full flex items-center justify-center font-bold text-black border-4 border-background shadow-lg transition-all group-hover:scale-110 ${
                         index === 0 ? 'bg-primary' : index === waypoints.length - 1 ? 'bg-accent' : 'bg-secondary'
                       }`}>
                         {index + 1}

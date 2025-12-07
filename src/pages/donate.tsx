@@ -31,7 +31,7 @@ export default function Donate() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <Badge className="bg-accent text-white mb-4 px-4 py-1 text-sm tracking-widest uppercase">
-                Soutenir l'EFK
+                Soutenir notre École
               </Badge>
               <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
                 Contribuez à l'Excellence

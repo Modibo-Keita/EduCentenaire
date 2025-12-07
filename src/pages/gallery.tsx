@@ -16,24 +16,32 @@ import archive10 from "@assets/EFK_Images/img_kkoto_cscom.jpeg";
 
 // Mock data for gallery categories
 const archives = [
-  { src: archive1, title: "La première classe (1930)", category: "1925-1950" },
+  {
+    src: archive1,
+    title: "La première promotion (1930)",
+    category: "1925-1990",
+  },
   {
     src: archive2,
     title: "Récréation dans la cour (1955)",
-    category: "1950-1975",
+    category: "1990-2025",
   },
   {
     src: archive3,
-    title: "Promotion 'Indépendance' (1970)",
-    category: "1950-1975",
+    title: "Promotion 'Indépendance - 1960'",
+    category: "1990-2025",
   },
-  { src: archive4, title: "L'ancienne bibliothèque", category: "1925-1950" },
-  { src: archive5, title: "L'ancienne bibliothèque", category: "1925-1950" },
-  { src: archive6, title: "L'ancienne bibliothèque", category: "1950-1975" },
-  { src: archive7, title: "L'ancienne bibliothèque", category: "1925-1950" },
-  { src: archive8, title: "L'ancienne bibliothèque", category: "1950-1975" },
-  { src: archive9, title: "L'ancienne bibliothèque", category: "1950-1975" },
-  { src: archive10, title: "L'ancienne bibliothèque", category: "1925-1950" },
+  { src: archive4, title: "Ancienne bibliothèque", category: "1925-1990" },
+  { src: archive5, title: "L'un des premiers élèves", category: "1925-1990" },
+  { src: archive6, title: "Fête traditionnelle", category: "1925-1990" },
+  { src: archive7, title: "Une salle de classe", category: "1925-1990" },
+  { src: archive8, title: "Premier Batimat", category: "1990-2025" },
+  {
+    src: archive9,
+    title: "Fête traditionnelle",
+    category: "1990-2025",
+  },
+  { src: archive10, title: "Nouvelle école", category: "1990-2025" },
 ];
 
 export default function Gallery() {
@@ -58,8 +66,8 @@ export default function Gallery() {
             <div className="flex justify-center mb-12">
               <TabsList className="h-auto p-1 bg-secondary/30 rounded-full">
                 <TabsTrigger value="all" className="rounded-full px-6 py-2 font-serif data-[state=active]:bg-primary data-[state=active]:text-white">Tout voir</TabsTrigger>
-                <TabsTrigger value="1925-1950" className="rounded-full px-6 py-2 font-serif data-[state=active]:bg-primary data-[state=active]:text-white">1925-1950</TabsTrigger>
-                <TabsTrigger value="1950-1975" className="rounded-full px-6 py-2 font-serif data-[state=active]:bg-primary data-[state=active]:text-white">1950-1975</TabsTrigger>
+                <TabsTrigger value="1925-1990" className="rounded-full px-6 py-2 font-serif data-[state=active]:bg-primary data-[state=active]:text-white">1925-1990</TabsTrigger>
+                <TabsTrigger value="1990-2025" className="rounded-full px-6 py-2 font-serif data-[state=active]:bg-primary data-[state=active]:text-white">1990-2025</TabsTrigger>
                 <TabsTrigger value="video" className="rounded-full px-6 py-2 font-serif data-[state=active]:bg-primary data-[state=active]:text-white">Vidéos</TabsTrigger>
               </TabsList>
             </div>
@@ -72,17 +80,17 @@ export default function Gallery() {
               </div>
             </TabsContent>
 
-            <TabsContent value="1925-1950" className="mt-0">
+            <TabsContent value="1925-1990" className="mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {archives.filter(a => a.category === "1925-1950").map((item, index) => (
+                {archives.filter(a => a.category === "1925-1990").map((item, index) => (
                   <GalleryItem key={index} item={item} />
                 ))}
               </div>
             </TabsContent>
 
-            <TabsContent value="1950-1975" className="mt-0">
+            <TabsContent value="1990-2025" className="mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {archives.filter(a => a.category === "1950-1975").map((item, index) => (
+                {archives.filter(a => a.category === "1990-2025").map((item, index) => (
                   <GalleryItem key={index} item={item} />
                 ))}
               </div>

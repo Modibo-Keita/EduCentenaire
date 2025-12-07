@@ -102,12 +102,12 @@ export default function Home() {
 
               <div className="prose prose-lg text-muted-foreground space-y-6">
                 <p>
-                  Niché au cœur de la toute région de Kita, Kourouninkoto est
+                  Situé au cœur de la région de Kita, Kourouninkoto est
                   l''un des villages importants du Kaarta (un espace
                   geographique herité du royaume historique massassi de Kaarta)
                   mais surtout un village carrefour ce qui lui a valu de voir
-                  batir sur son sol, l'une des premières écoles du soudan
-                  pendant la colonisation. Une terre d'histoire de traditions de
+                  batir sur son sol, l'une des premières écoles du soudan français
+                  de la période coloniale. Une terre d'histoire de traditions de
                   culture et d'hospitalité malienne. Fondée sur des terres
                   fertiles et entourée de collines et d'arbres centenaires,
                   notre communauté incarne l'harmonie entre tradition et

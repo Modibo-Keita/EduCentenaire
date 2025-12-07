@@ -20,46 +20,71 @@ export function Committee() {
             {/* President's Message */}
             <div className="lg:col-span-2 bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/20 rounded-2xl p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full -mr-16 -mt-16"></div>
-              
+
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-8">
                   <Award className="h-8 w-8 text-accent" />
                   <div>
-                    <h3 className="font-serif font-bold text-2xl text-primary">Mot du Président</h3>
-                    <p className="text-sm text-muted-foreground">Mamounou Touré</p>
+                    <h3 className="font-serif font-bold text-2xl text-primary">
+                      Mot du Président
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Mamounou Touré
+                    </p>
                   </div>
                 </div>
 
                 <div className="flex gap-8 items-start mb-6">
                   <div className="shrink-0">
-                    <img 
+                    <img
                       src={presidentImg}
                       alt="Mamounou Touré, Président du Comité"
                       className="w-32 h-40 object-cover rounded-lg shadow-lg border-2 border-primary/20"
                     />
                   </div>
-                  
-                  <blockquote className="text-lg text-foreground leading-relaxed space-y-4 font-light italic flex-1 mr-6">
-                  <p>
-                    "Chères amies, chers amis, anciens et futures élèves,
-                  </p>
-                  <p>
-                    C'est avec un honneur immense et une profonde émotion que je m'adresse à vous en tant que président du comité d'organisation du centenaire de notre chère École Fondamentale de Kourouninkoto. Cet anniversaire marque bien plus qu'une simple succession de cent années – c'est la célébration d'un héritage vivant, d'une mission transformatrice et d'une vision collective pour l'avenir.
-                  </p>
-                  <p>
-                    Depuis 1925, notre école a été le cœur battant de Kourouninkoto, transmettant non seulement le savoir académique, mais aussi les valeurs d'intégrité, de persévérance et de solidarité qui définissent notre communauté. Chaque génération d'élèves qui a franchi nos portes a emporté avec elle les graines d'une éducation de qualité et d'une fierté communautaire inébranlable.
-                  </p>
-                  <p>
-                    Ces quatre jours de décembre seront l'occasion de nous réunir pour honorer ce passé magnifique, célébrer nos accomplissements collectifs et esquisser ensemble les contours d'un avenir plus prometteur. Nous accueillons chaleureusement tous les anciens élèves, les parents, les amis de l'école et tous ceux qui partagent notre conviction que l'éducation est le fondement du progrès.
-                  </p>
-                  <p>
-                    Ensemble, nous écrirons le prochain chapitre de cette belle histoire.
-                  </p>
-                  <p className="text-right">
-                    <strong>Respectueusement,</strong><br/>
-                    <strong>Mamounou Touré</strong><br/>
-                    <span className="text-sm">Président du Comité d'Organisation</span>
-                  </p>
+
+                  <blockquote className="text-lg text-foreground leading-relaxed space-y-4 font-light italic flex-1 pr-4 md:px-6 ">
+                    <p>"Chères amies, chers amis, anciens et futures élèves,</p>
+                    <p>
+                      C'est avec un honneur immense et une profonde émotion que
+                      je m'adresse à vous en tant que président du comité
+                      d'organisation du centenaire de notre chère École
+                      Fondamentale de Kourouninkoto. Cet anniversaire marque
+                      bien plus qu'une simple succession de cent années – c'est
+                      la célébration d'un héritage vivant, d'une mission
+                      transformatrice et d'une vision collective pour l'avenir.
+                    </p>
+                    <p>
+                      Depuis 1925, notre école a été le cœur battant de
+                      Kourouninkoto, transmettant non seulement le savoir
+                      académique, mais aussi les valeurs d'intégrité, de
+                      persévérance et de solidarité qui définissent notre
+                      communauté. Chaque génération d'élèves qui a franchi nos
+                      portes a emporté avec elle les graines d'une éducation de
+                      qualité et d'une fierté communautaire inébranlable.
+                    </p>
+                    <p>
+                      Ces quatre jours de décembre seront l'occasion de nous
+                      réunir pour honorer ce passé magnifique, célébrer nos
+                      accomplissements collectifs et esquisser ensemble les
+                      contours d'un avenir plus prometteur. Nous accueillons
+                      chaleureusement tous les anciens élèves, les parents, les
+                      amis de l'école et tous ceux qui partagent notre
+                      conviction que l'éducation est le fondement du progrès.
+                    </p>
+                    <p>
+                      Ensemble, nous écrirons le prochain chapitre de cette
+                      belle histoire.
+                    </p>
+                    <p className="text-right">
+                      <strong>Respectueusement,</strong>
+                      <br />
+                      <strong>Mamounou Touré</strong>
+                      <br />
+                      <span className="text-sm">
+                        Président du Comité d'Organisation
+                      </span>
+                    </p>
                   </blockquote>
                 </div>
               </div>
@@ -70,15 +95,21 @@ export function Committee() {
               <div className="bg-white border-2 border-primary rounded-2xl p-6 shadow-lg">
                 <div className="flex items-center gap-3 mb-4">
                   <Users className="h-7 w-7 text-accent" />
-                  <h4 className="font-serif font-bold text-xl text-primary">Notre Mission</h4>
+                  <h4 className="font-serif font-bold text-xl text-primary">
+                    Notre Mission
+                  </h4>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Organiser une célébration mémorable qui unit tous les anciens, actuels et futurs membres de la famille de l'École Fondamentale de Kourouninkoto.
+                  Organiser une célébration mémorable qui unit tous les anciens,
+                  actuels et futurs membres de la famille de l'École
+                  Fondamentale de Kourouninkoto.
                 </p>
               </div>
 
               <div className="bg-primary text-white rounded-2xl p-6 shadow-lg">
-                <h4 className="font-serif font-bold text-lg mb-4 text-secondary">Domaines d'Action</h4>
+                <h4 className="font-serif font-bold text-lg mb-4 text-secondary">
+                  Domaines d'Action
+                </h4>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-secondary font-bold">•</span>
@@ -105,8 +136,12 @@ export function Committee() {
 
               <div className="bg-background border-2 border-secondary/30 rounded-2xl p-6">
                 <p className="text-xs text-center text-muted-foreground">
-                  <strong>Avoir des questions ?</strong><br/>
-                  <a href="/contact" className="text-primary hover:underline font-bold">
+                  <strong>Vous avez des questions ?</strong>
+                  <br />
+                  <a
+                    href="/contact"
+                    className="text-primary hover:underline font-bold"
+                  >
                     Contactez-nous
                   </a>
                 </p>

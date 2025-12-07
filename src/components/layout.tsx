@@ -1,10 +1,13 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import logo from "@assets/EFK-officiel_1764370820619.png";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ArrowUp } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const [location] = useLocation();
+  const isActive = (href: string) => location === href;
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -43,14 +46,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <Link href="/">
             <a className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-              <img 
-                src={logo} 
-                alt="Logo EFK Centenaire" 
+              <img
+                src={logo}
+                alt="Logo EFK Centenaire"
                 className="h-12 w-auto object-contain"
               />
               <div className="hidden md:block">
-                <h1 className="font-serif font-bold text-lg text-primary leading-none">École Fondamentale</h1>
-                <p className="text-sm text-muted-foreground tracking-widest uppercase">de Kourouninkoto</p>
+                <h1 className="font-serif font-bold text-lg text-primary leading-none">
+                  École Fondamentale
+                </h1>
+                <p className="text-sm text-muted-foreground tracking-widest uppercase">
+                  de Kourouninkoto
+                </p>
               </div>
             </a>
           </Link>
@@ -59,22 +66,30 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <nav className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <a className={`text-sm font-medium transition-colors hover:text-primary ${
-                  item.href === "/don" ? "text-accent font-bold" : "text-foreground/80"
-                }`}>
+                <a
+                  className={`text-sm font-medium transition-colors ${
+                    isActive(item.href)
+                      ? "text-primary underline underline-offset-4 font-semibold"
+                      : "text-foreground/80 hover:text-primary"
+                  }`}
+                >
                   {item.label}
                 </a>
               </Link>
             ))}
             <Link href="/contact">
-              <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-white font-serif">
+              <Button
+                variant="default"
+                size="sm"
+                className="bg-primary hover:bg-primary/90 text-white font-serif"
+              >
                 Contact
               </Button>
             </Link>
           </nav>
 
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             className="md:hidden p-2 text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -87,8 +102,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="md:hidden border-t border-border bg-background px-4 py-4 space-y-4">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <a 
-                  className="block text-base font-medium text-foreground/80 hover:text-primary py-2"
+                <a
+                  className={`block text-base font-medium py-2 transition-colors ${
+                    isActive(item.href)
+                      ? "text-primary font-semibold underline underline-offset-4"
+                      : "text-foreground/80 hover:text-primary"
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
@@ -105,34 +124,59 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1">
-        {children}
-      </main>
+      <main className="flex-1">{children}</main>
 
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-12 border-t border-accent/20 foter">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-              <img src={logo} alt="EFK Logo" className="h-10 brightness-0 invert opacity-80" />
+              <img
+                src={logo}
+                alt="EFK Logo"
+                className="h-10 brightness-0 invert opacity-80"
+              />
               <span className="font-serif font-bold text-xl">EFK - 1925</span>
             </div>
             <p className="text-sm text-primary-foreground/70 max-w-xs mx-auto md:mx-0">
-              Célébrons un siècle d'éducation, de transmission et d'avenir à Kourouninkoto, Mali.
+              Célébrons un siècle d'éducation, de transmission et d'avenir à
+              Kourouninkoto, Mali.
             </p>
           </div>
-          
+
           <div>
-            <h3 className="font-serif font-bold mb-4 text-secondary">Liens Rapides</h3>
+            <h3 className="font-serif font-bold mb-4 text-secondary">
+              Liens Rapides
+            </h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/histoire"><a className="hover:text-secondary transition-colors">Notre Histoire</a></Link></li>
-              <li><Link href="/programme"><a className="hover:text-secondary transition-colors">Programme du Centenaire</a></Link></li>
-              <li><Link href="/galerie"><a className="hover:text-secondary transition-colors">Galerie Photos</a></Link></li>
+              <li>
+                <Link href="/histoire">
+                  <a className="hover:text-secondary transition-colors">
+                    Notre Histoire
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/programme">
+                  <a className="hover:text-secondary transition-colors">
+                    Programme du Centenaire
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/galerie">
+                  <a className="hover:text-secondary transition-colors">
+                    Galerie Photos
+                  </a>
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-serif font-bold mb-4 text-secondary">Contact</h3>
+            <h3 className="font-serif font-bold mb-4 text-secondary">
+              Contact
+            </h3>
             <address className="text-sm not-italic text-primary-foreground/70 space-y-2">
               <p>Kourouninkoto, Bagué - Kaarta </p>
               <p>Région de Kita, Mali</p>
@@ -141,7 +185,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
         <div className="container mx-auto px-4 mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center text-xs text-primary-foreground/50">
-          <p>© 2025 École Fondamentale de Kourouninkoto. Tous droits réservés.</p>
+          <p>
+            © 2025 École Fondamentale de Kourouninkoto. Tous droits réservés.
+          </p>
           <p className="mt-2 md:mt-0">Développé par Modibo D. Keita</p>
         </div>
       </footer>

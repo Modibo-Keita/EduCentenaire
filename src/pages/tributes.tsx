@@ -5,8 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
 import tribute1 from "@assets/EFK_Images/Img_directeur_Sy.jpg";
 import tribute2 from "@assets/EFK_Images/Img_leck-sangare.jpg";
-import tribute3 from "@assets/EFK_Images/img_Madeira-Keita.jpg";
-import tribute4 from "@assets/EFK_Images/Img_Harimakan-Keita.jpg";
+import tribute3 from "@assets/generated_images/portrait_of_malian_lawyer_professional.png";
+import tribute4 from "@assets/generated_images/portrait_of_legendary_teacher_1980s.png";
 import tribute5 from "@assets/generated_images/portrait_of_legendary_teacher_1980s.png";
 import tribute6 from "@assets/generated_images/malian_professional_woman_portrait.png";
 import tribute7 from "@assets/generated_images/portrait_of_first_female_student_1940s.png";
@@ -20,8 +20,8 @@ const tributes = [
       "L'éducation est l'arme la plus puissante pour changer le monde. J'ai consacré ma vie à affûter l'esprit de la jeunesse de Kourouninkoto.",
   },
   {
-    name: "Aminata Diallo",
-    role: "Première Bachelière (Promo 1948)",
+    name: "Diambou Dansira",
+    role: "Première fille inscrite (Promo 1958)",
     image: tribute7,
     quote:
       "Être la première fille à obtenir mon certificat fut une fierté immense. J'ai ouvert la voie pour mes sœurs, et aujourd'hui, elles sont médecins, ingénieures, enseignantes.",
@@ -34,29 +34,29 @@ const tributes = [
       "La discipline et le respect sont les fondations du savoir. Sous mon arbre à palabres, nous avons réglé bien des conflits et construit bien des avenirs.",
   },
   {
-    name: "Madame Bassira",
-    role: "Professeur de Mathématiques (1980-2010)",
+    name: "Monsieur qui dit mieux",
+    role: "Professeur principal (1994-2002)",
     image: tribute4,
     quote:
       "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout.",
   },
   {
     name: "M.Leck Sangare",
-    role: "Professeur de Mathématiques (1980-2010)",
+    role: "Professeur d'Histoire_Géo (2011-2015)",
     image: tribute2,
     quote:
       "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout.",
   },
   {
-    name: "Moussa Traoré",
-    role: "Professeur de Mathématiques (1980-2010)",
+    name: "Mme Bassira Aminata",
+    role: "Professeur de Biologie (2008-2016)",
     image: tribute6,
     quote:
       "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout.",
   },
   {
     name: "Apegnon Dolo",
-    role: "Professeur de Mathématiques (1980-2010)",
+    role: "Professeur de Mathématiques (2012-2017)",
     image: tribute5,
     quote:
       "Les mathématiques ne sont pas que des chiffres, c'est un langage universel. J'ai voulu montrer à mes élèves que la logique pouvait les mener partout.",
@@ -70,7 +70,7 @@ export default function Tributes() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <Badge variant="secondary" className="mb-4 px-4 py-1 text-sm tracking-widest uppercase bg-accent/10 text-accent border-accent/20">
-              In Memoriam
+              Dans nos Mémoires
             </Badge>
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
               Hommages aux Pionniers

@@ -71,7 +71,7 @@ export default function History() {
             <Badge variant="secondary" className="mb-6 px-4 py-1 text-sm tracking-widest uppercase bg-secondary text-secondary-foreground border-none">
               Notre Héritage
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">100 Ans d'Histoire</h1>
+            <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">100 ans d'Histoire</h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed font-light">
               De 1925 à nos jours, découvrez les grandes étapes qui ont façonné l'École Fondamentale de Kourouninkoto.
             </p>
@@ -134,7 +134,7 @@ export default function History() {
             {/* End Marker */}
             <div className="flex justify-center mt-24">
               <div className="bg-primary text-white px-8 py-4 rounded-full shadow-xl font-serif font-bold text-lg animate-bounce">
-                2025 : Le Centenaire !
+                2025 : Joyeux Centenaire !
               </div>
             </div>
 

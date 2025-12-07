@@ -12,18 +12,18 @@ export default function Program() {
       label: "Jour 1",
       events: [
         {
-          time: "09:00",
+          time: "08:00",
           title: "Cérémonie d'Ouverture du Centenaire",
-          description: "Grande cérémonie officielle marquant le lancement des festivités du centenaire avec la présence de personnalités officielles, discours inauguraux et levée des couleurs.",
+          description: "Grande cérémonie officielle marquant le lancement des festivités du centenaire avec la présence de personnalités officielles, des légitimités traditionnelles et réligieuses, des discours inauguraux et levée des couleurs nationales de la République du Mali.",
           location: "Grande Cour de l'École",
           icon: Trophy,
           type: "Officiel"
         },
         {
           time: "14:00",
-          title: "Vernissage Exposition '100 Ans de Mémoire'",
+          title: "Exposition photos '100 ans de Mémoire'",
           description: "Inauguration de l'exposition unique présentant photos d'archives, documents historiques et objets retraçant la vie de l'école depuis 1925.",
-          location: "Salle Polyvalente",
+          location: "Dans la grande salle de l'école",
           icon: Calendar,
           type: "Culture"
         }
@@ -37,12 +37,12 @@ export default function Program() {
           time: "10:00",
           title: "Conférence 'L'Éducation au Mali'",
           description: "Table ronde avec d'éminents pédagogues, anciens élèves et décideurs sur les défis et les perspectives de l'avenir de l'éducation au Mali.",
-          location: "Amphithéâtre de Plein Air",
+          location: "Dans la cour en Plein Air",
           icon: Mic2,
           type: "Conférence"
         },
         {
-          time: "16:00",
+          time: "15:00",
           title: "Rencontre Inter-Générations",
           description: "Moments d'échanges privilégiés entre les anciens élèves et les élèves actuels. Partage d'expériences et mentorat.",
           location: "Jardins de l'École",
@@ -59,7 +59,7 @@ export default function Program() {
           time: "14:00",
           title: "Festival Culturel Inter-Écoles",
           description: "Compétitions artistiques, représentations théâtrales, poésie et concerts mettant en valeur le talent et la créativité des élèves de la région.",
-          location: "Podium Central",
+          location: "Grande place publique",
           icon: Music,
           type: "Festivités"
         },
@@ -67,7 +67,7 @@ export default function Program() {
           time: "20:00",
           title: "Gala de Charité & Prix d'Excellence",
           description: "Soirée de gala prestigieuse en l'honneur des anciens élèves distingués. Collecte de fonds pour les bourses d'études et rénovations.",
-          location: "Espace de Réception Kourouninkoto",
+          location: "Dans l'enceinte de l'école",
           icon: Trophy,
           type: "Gala"
         }
@@ -78,7 +78,7 @@ export default function Program() {
       label: "Jour 4",
       events: [
         {
-          time: "09:00",
+          time: "08:00",
           title: "Cérémonie de Clôture",
           description: "Clôture officielle des festivités, remerciements aux partenaires et lecture du 'Livre d'Or' du centenaire.",
           location: "Grande Cour",
@@ -88,7 +88,7 @@ export default function Program() {
         {
           time: "11:00",
           title: "Plantation de l'Arbre du Centenaire",
-          description: "Plantation symbolique d'un baobab pour les générations futures, marquant l'enracinement de l'école et sa croissance vers l'avenir.",
+          description: "Plantation symbolique d'un arbre pour les générations futures, marquant l'enracinement de l'école et sa croissance vers l'avenir.",
           location: "Entrée Principale",
           icon: TreePine,
           type: "Symbole"
@@ -106,7 +106,7 @@ export default function Program() {
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <Badge className="bg-accent text-white hover:bg-accent mb-6 px-4 py-1 text-sm font-bold tracking-widest uppercase">
-            27 - 30 Décembre 2025
+            Du 27 au 30 Décembre 2025
           </Badge>
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6">Programme des Festivités</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto font-light">
@@ -127,7 +127,7 @@ export default function Program() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-sm">Les activités débutent chaque jour à 9h00. Les soirées culturelles se terminent à 23h00.</p>
+              <p className="text-muted-foreground text-sm">Les activités débutent chaque jour à 8h00. Les soirées culturelles se terminent à 23h00.</p>
             </CardContent>
           </Card>
           <Card className="bg-card shadow-lg border-t-4 border-t-accent">
@@ -137,7 +137,7 @@ export default function Program() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-sm">Tous les événements ont lieu dans l'enceinte de l'école ou au village de Kourouninkoto.</p>
+              <p className="text-muted-foreground text-sm">Tous les événements ont lieu dans l'enceinte de l'école ou à la place publique du village de Kourouninkoto.</p>
             </CardContent>
           </Card>
           <Card className="bg-card shadow-lg border-t-4 border-t-accent">
@@ -147,7 +147,7 @@ export default function Program() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-sm">L'accès aux cérémonies est libre. Le Gala de charité nécessite une réservation préalable.</p>
+              <p className="text-muted-foreground text-sm">L'accès aux cérémonies est libre et gratuites.</p>
             </CardContent>
           </Card>
         </div>
