@@ -35,6 +35,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Remet la page en haut à chaque changement de route
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location]);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

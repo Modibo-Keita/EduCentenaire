@@ -74,7 +74,7 @@ export default function Home() {
       <section className="py-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-16">
-            <div className="lg:w-1/2 relative">
+            {/* <div className="lg:w-1/2 relative">
               <div className="absolute -inset-4 bg-secondary/20 rounded-2xl transform rotate-3"></div>
               <img
                 src={villageImg}
@@ -89,7 +89,33 @@ export default function Home() {
                   Région de Kita, Mali
                 </p>
               </div>
-            </div>
+            </div> */}
+            {/* google map */}
+            <section className="py-16 bg-[#E9FBEF]">
+              <div className="container mx-auto px-4">
+                {/* Titre */}
+                <h2 className="text-3xl font-serif font-bold text-center text-primary mb-4">
+                  Localisation de Kourouninkoto
+                </h2>
+                <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-10">
+                  Découvrez où se situe Kourouninkoto, berceau historique de
+                  l’École Fondamentale fondée il y a un siècle.
+                </p>
+
+                {/* Carte */}
+                <div className="w-full overflow-hidden rounded-2xl shadow-xl border border-border/40">
+                  <iframe
+                    title="Kourouninkoto Map"
+                    width="100%"
+                    height="380"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-2xl"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11497.58068432129!2d-10.856!3d13.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe51b0c8d32df9a7%3A0x8bc2c1d2e2ff2c26!2sKourouninkoto!5e1!3m2!1sfr!2sml!4v1706200000000"
+                  ></iframe>
+                </div>
+              </div>
+            </section>
 
             <div className="lg:w-1/2">
               <h2 className="text-black font-bold tracking-widest uppercase text-sm mb-4">
@@ -102,12 +128,12 @@ export default function Home() {
 
               <div className="prose prose-lg text-muted-foreground space-y-6">
                 <p>
-                  Situé au cœur de la région de Kita, Kourouninkoto est
-                  l''un des villages importants du Kaarta (un espace
-                  geographique herité du royaume historique massassi de Kaarta)
-                  mais surtout un village carrefour ce qui lui a valu de voir
-                  batir sur son sol, l'une des premières écoles du soudan français
-                  de la période coloniale. Une terre d'histoire de traditions de
+                  Situé au cœur de la région de Kita, Kourouninkoto est l''un
+                  des villages importants du Kaarta (un espace geographique
+                  herité du royaume historique massassi de Kaarta) mais surtout
+                  un village carrefour ce qui lui a valu de voir batir sur son
+                  sol, l'une des premières écoles du soudan français de la
+                  période coloniale. Une terre d'histoire de traditions de
                   culture et d'hospitalité malienne. Fondée sur des terres
                   fertiles et entourée de collines et d'arbres centenaires,
                   notre communauté incarne l'harmonie entre tradition et
