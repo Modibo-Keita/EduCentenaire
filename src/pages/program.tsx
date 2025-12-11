@@ -179,14 +179,14 @@ export default function Program() {
 
                 {day.events.map((event, idx) => (
                   <div key={idx} className="group bg-white rounded-xl border border-border p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-10 hover:shadow-lg transition-shadow hover:border-primary/30 items-start">
-                    <div className="flex-shrink-0 w-full md:w-48 bg-secondary/20 rounded-lg p-4 text-center border border-secondary/50 self-stretch flex flex-col justify-center">
+                    <div className="shrink-0 w-full md:w-48 bg-secondary/20 rounded-lg p-4 text-center border border-secondary/50 self-stretch flex flex-col justify-center">
                       <span className="text-2xl font-bold text-primary block mb-1">{event.time}</span>
                       <div className="flex items-center justify-center gap-2 text-xs font-medium text-muted-foreground uppercase tracking-wider">
                         <MapPin className="w-3 h-3" /> {event.location}
                       </div>
                     </div>
                     
-                    <div className="flex-grow space-y-3">
+                    <div className="grow space-y-3">
                       <div className="flex items-center justify-between flex-wrap gap-2">
                         <h3 className="text-xl md:text-2xl font-serif font-bold text-foreground group-hover:text-primary transition-colors">
                           {event.title}

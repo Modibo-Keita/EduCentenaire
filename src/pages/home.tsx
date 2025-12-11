@@ -19,7 +19,7 @@ export default function Home() {
             alt="Paysage de Kourouninkoto"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-background/95" />
+          <div className="absolute inset-0 bg-linear-to-b from-primary/80 via-primary/40 to-background/95" />
         </div>
 
         <div className="container relative z-10 px-4 text-center max-w-5xl mx-auto py-20">

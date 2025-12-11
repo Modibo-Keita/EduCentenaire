@@ -18,7 +18,7 @@ export function Committee() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
             {/* President's Message */}
-            <div className="lg:col-span-2 bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/20 rounded-2xl p-8 relative overflow-hidden">
+            <div className="lg:col-span-2 bg-linear-to-br from-primary/5 to-secondary/5 border border-primary/20 rounded-2xl p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full -mr-16 -mt-16"></div>
 
               <div className="relative z-10">

@@ -108,7 +108,7 @@ export default function Partners() {
               <span className="bg-background px-4 relative z-10">
                 Partenaires Institutionnels
               </span>
-              <span className="absolute top-1/2 left-0 right-0 h-px bg-border -z-0"></span>
+              <span className="absolute top-1/2 left-0 right-0 h-px bg-border z-0"></span>
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -145,7 +145,7 @@ export default function Partners() {
               <span className="bg-background px-4 relative z-10">
                 Nos partenaires médiatiques
               </span>
-              <span className="absolute top-1/2 left-0 right-0 h-px bg-border -z-0"></span>
+              <span className="absolute top-1/2 left-0 right-0 h-px bg-border z-0"></span>
             </h3>
 
             <div className="relative overflow-hidden bg-white rounded-2xl p-8 border border-border">
@@ -159,7 +159,7 @@ export default function Partners() {
                   ].map((sponsor, i) => (
                     <div
                       key={i}
-                      className="flex-shrink-0 flex items-center justify-center"
+                      className="shrink-0 flex items-center justify-center"
                     >
                       <div className="w-32 h-32 bg-gray-50 rounded-xl border border-gray-200 flex items-center justify-center p-4 hover:bg-gray-100 transition-colors">
                         <img

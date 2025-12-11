@@ -28,7 +28,7 @@ export function JourneyMap() {
             <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl p-8 border border-border">
               <div className="relative">
                 {/* Vertical Line */}
-                <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary"></div>
+                <div className="absolute left-6 top-0 bottom-0 w-1 bg-linear-to-b from-primary via-accent to-primary"></div>
 
                 {/* Waypoints */}
                 <div className="space-y-8">

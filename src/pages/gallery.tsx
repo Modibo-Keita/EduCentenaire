@@ -118,7 +118,7 @@ function GalleryItem({ item }: { item: { src: string; title: string; category: s
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer bg-black/5 shadow-md hover:shadow-xl transition-all duration-500">
+        <div className="group relative aspect-4/3 overflow-hidden rounded-xl cursor-pointer bg-black/5 shadow-md hover:shadow-xl transition-all duration-500">
           <img 
             src={item.src} 
             alt={item.title} 
@@ -127,7 +127,7 @@ function GalleryItem({ item }: { item: { src: string; title: string; category: s
           <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <ZoomIn className="text-white w-10 h-10 opacity-80" />
           </div>
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-white font-serif font-bold text-lg">{item.title}</p>
             <span className="text-white/70 text-xs uppercase tracking-wider">{item.category}</span>
           </div>

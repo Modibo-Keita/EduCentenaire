@@ -95,7 +95,7 @@ export default function Tributes() {
                               alt={item.name} 
                               className="w-full h-full object-cover filter grayscale contrast-110 hover:filter-none transition-all duration-500"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+                            <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           
                           <div className="text-center bg-card p-8 rounded-xl border border-border shadow-sm w-full flex-1 flex flex-col relative">
