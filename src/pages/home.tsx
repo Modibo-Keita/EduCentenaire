@@ -43,7 +43,7 @@ export default function Home() {
             <Link href="/programme">
               <Button
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-white font-serif px-10 py-7 text-lg h-auto shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 rounded-full border-2 border-transparent"
+                className="bg-[#C9A227] hover:bg-[#d8b547] text-[#0D1B2A] font-serif px-10 py-7 text-lg h-auto shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 rounded-full border-2 border-transparent"
               >
                 Voir le Programme
                 <Calendar className="ml-3 h-5 w-5" />
@@ -53,7 +53,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-accent backdrop-blur-sm border-white/40 text-white hover:bg-white hover:text-primary font-serif px-10 py-7 text-lg h-auto rounded-full hover:border-white transition-all"
+                className="bg-[#1B3557] backdrop-blur-sm border-white/40 text-white hover:bg-blue-300 hover:text-primary font-serif px-10 py-7 text-lg h-auto rounded-full hover:border-white transition-all"
               >
                 Notre Histoire
                 <ArrowRight className="ml-3 h-5 w-5" />

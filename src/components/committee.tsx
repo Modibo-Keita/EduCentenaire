@@ -34,48 +34,47 @@ export function Committee() {
                   </div>
                 </div>
 
-                <div className="flex gap-8 items-start mb-6">
-                  <div className="shrink-0">
-                    <img
-                      src={presidentImg}
-                      alt="Mamounou Touré, Président du Comité"
-                      className="w-32 h-40 object-cover rounded-lg shadow-lg border-2 border-primary/20"
-                    />
-                  </div>
+                <div className="mb-6">
+                  <img
+                    src={presidentImg}
+                    alt="Mamounou Touré, Président du Comité"
+                    className="
+      float-left
+      w-32 h-40
+      object-cover
+      rounded-lg
+      shadow-lg
+      border-2 border-primary/20
+      mr-6 mb-4
+    "
+                  />
 
-                  <blockquote className="text-lg text-foreground leading-relaxed space-y-4 font-light italic flex-1 pr-4 md:px-6 ">
+                  <blockquote className="text-lg text-foreground leading-relaxed space-y-4 font-light italic">
                     <p>"Chères amies, chers amis, anciens et futures élèves,</p>
+
                     <p>
                       C'est avec un honneur immense et une profonde émotion que
                       je m'adresse à vous en tant que président du comité
                       d'organisation du centenaire de notre chère École
-                      Fondamentale de Kourouninkoto. Cet anniversaire marque
-                      bien plus qu'une simple succession de cent années – c'est
-                      la célébration d'un héritage vivant, d'une mission
-                      transformatrice et d'une vision collective pour l'avenir.
+                      Fondamentale de Kourouninkoto...
                     </p>
+
                     <p>
                       Depuis 1925, notre école a été le cœur battant de
                       Kourouninkoto, transmettant non seulement le savoir
-                      académique, mais aussi les valeurs d'intégrité, de
-                      persévérance et de solidarité qui définissent notre
-                      communauté. Chaque génération d'élèves qui a franchi nos
-                      portes a emporté avec elle les graines d'une éducation de
-                      qualité et d'une fierté communautaire inébranlable.
+                      académique, mais aussi les valeurs d'intégrité...
                     </p>
+
                     <p>
                       Ces quatre jours de décembre seront l'occasion de nous
-                      réunir pour honorer ce passé magnifique, célébrer nos
-                      accomplissements collectifs et esquisser ensemble les
-                      contours d'un avenir plus prometteur. Nous accueillons
-                      chaleureusement tous les anciens élèves, les parents, les
-                      amis de l'école et tous ceux qui partagent notre
-                      conviction que l'éducation est le fondement du progrès.
+                      réunir pour honorer ce passé magnifique...
                     </p>
+
                     <p>
                       Ensemble, nous écrirons le prochain chapitre de cette
                       belle histoire.
                     </p>
+
                     <p className="text-right">
                       <strong>Respectueusement,</strong>
                       <br />
@@ -86,6 +85,9 @@ export function Committee() {
                       </span>
                     </p>
                   </blockquote>
+
+                  {/* Nettoyage du float */}
+                  <div className="clear-both" />
                 </div>
               </div>
             </div>
