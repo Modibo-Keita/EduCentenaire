@@ -53,8 +53,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-bold mb-1">Adresse</h4>
                       <p className="text-sm text-primary-foreground/80 leading-relaxed">
-                        École Fondamentale de Kourouninkoto<br/>
-                        Cercle de Kita, Région de Kita<br/>
+                        Groupe Scolaire Mamadou Madéira Keita de Kourouninkoto<br/>
+                        Kaarta, Région de Kita<br/>
                         Mali
                       </p>
                     </div>
@@ -67,8 +67,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-bold mb-1">Email</h4>
                       <p className="text-sm text-primary-foreground/80">
-                        contact@efk-centenaire.ml<br/>
-                        presse@efk-centenaire.ml
+                        contact@kaarta-centenaire.ml<br/>
+                        presse@kaarta-centenaire.ml
                       </p>
                     </div>
                   </div>
@@ -80,8 +80,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-bold mb-1">Téléphone</h4>
                       <p className="text-sm text-primary-foreground/80">
-                        +223 70 00 00 00<br/>
-                        +223 60 00 00 00
+                        +223 74 30 51 04<br/>
+                        +223 74 08 57 08
                       </p>
                     </div>
                   </div>

@@ -69,15 +69,20 @@ export default function Tributes() {
       <div className="bg-background min-h-screen py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <Badge variant="secondary" className="mb-4 px-4 py-1 text-sm tracking-widest uppercase bg-accent/10 text-accent border-accent/20">
+            <Badge
+              variant="secondary"
+              className="mb-4 px-4 py-1 text-sm tracking-widest uppercase bg-accent/10 text-accent border-accent/20"
+            >
               Dans nos Mémoires
             </Badge>
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
               Hommages aux Pionniers
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Ils ont bâti l'âme de l'École Fondamentale de Kourouninkoto. Enseignants dévoués, élèves brillants, directeurs visionnaires... 
-              Nous honorons leur mémoire et leur contribution inestimable.
+              Ils ont bâti l'âme du Groupe Scolaire Mamadou Madéira Keita de
+              Kourouninkoto. Enseignants dévoués, élèves brillants, directeurs
+              visionnaires... Nous honorons leur mémoire et leur contribution
+              inestimable.
             </p>
           </div>
 
@@ -85,27 +90,34 @@ export default function Tributes() {
             <Carousel className="w-full" opts={{ loop: true }}>
               <CarouselContent className="-ml-4">
                 {tributes.map((item, index) => (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    key={index}
+                    className="pl-4 md:basis-1/2 lg:basis-1/3"
+                  >
                     <div className="p-1 h-full">
                       <Card className="h-full border-none shadow-none bg-transparent">
                         <CardContent className="flex flex-col items-center p-0 h-full">
                           <div className="relative w-full aspect-square mb-6 rounded-full overflow-hidden border-4 border-primary/10 shadow-xl max-w-[280px]">
-                            <img 
-                              src={item.image} 
-                              alt={item.name} 
+                            <img
+                              src={item.image}
+                              alt={item.name}
                               className="w-full h-full object-cover filter grayscale contrast-110 hover:filter-none transition-all duration-500"
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
                           </div>
-                          
+
                           <div className="text-center bg-card p-8 rounded-xl border border-border shadow-sm w-full flex-1 flex flex-col relative">
                             <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
                               <Quote className="w-5 h-5 fill-current" />
                             </div>
-                            
-                            <h3 className="mt-4 text-xl font-serif font-bold text-primary">{item.name}</h3>
-                            <p className="text-sm font-bold text-accent uppercase tracking-wider mb-4">{item.role}</p>
-                            
+
+                            <h3 className="mt-4 text-xl font-serif font-bold text-primary">
+                              {item.name}
+                            </h3>
+                            <p className="text-sm font-bold text-accent uppercase tracking-wider mb-4">
+                              {item.role}
+                            </p>
+
                             <p className="text-muted-foreground italic leading-relaxed flex-1">
                               "{item.quote}"
                             </p>
@@ -120,7 +132,7 @@ export default function Tributes() {
                 <CarouselPrevious className="-left-12 border-primary text-primary hover:bg-primary hover:text-white" />
                 <CarouselNext className="-right-12 border-primary text-primary hover:bg-primary hover:text-white" />
               </div>
-              
+
               {/* Mobile Controls */}
               <div className="flex justify-center gap-4 mt-8 md:hidden">
                 <CarouselPrevious className="static translate-y-0 border-primary text-primary hover:bg-primary hover:text-white" />

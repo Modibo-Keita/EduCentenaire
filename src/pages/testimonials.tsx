@@ -56,7 +56,7 @@ export default function Testimonials() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-orange-600 font-bold tracking-widest uppercase text-sm mb-4">
-              Ils ont fait l'Ecole de Kourouninkoto
+              Ils ont fait GS-MMK de Kourouninkoto
             </h2>
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
               Mémoires Vivantes

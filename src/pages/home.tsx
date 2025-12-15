@@ -33,8 +33,8 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
-            Bienvenue au Centenaire de l'École Fondamentale de Kourouninkoto. Un
-            siècle de savoir transmis au cœur du Mali.
+            Bienvenue au Centenaire du Groupe Scolaire Mamadou Madéira Keita de
+            Kourouninkoto. Un siècle de savoir transmis au cœur du Mali.
           </p>
 
           <Countdown />
@@ -79,7 +79,7 @@ export default function Home() {
               <img
                 src={villageImg}
                 alt="Village de Kourouninkoto"
-                className="relative rounded-xl shadow-2xl w-full aspect-[4/3] object-cover transform -rotate-2 hover:rotate-0 transition-transform duration-500"
+                className="relative rounded-xl shadow-2xl w-full aspect-4/3 object-cover transform -rotate-2 hover:rotate-0 transition-transform duration-500"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-xl max-w-[200px] hidden md:block">
                 <p className="font-serif font-bold text-primary text-lg">
@@ -122,8 +122,8 @@ export default function Home() {
                 Le Berceau de l'École
               </h2>
               <h3 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-8 leading-tight">
-                Kourouninkoto, <br />
-                <span className="text-primary">Au coeur du Kaarta</span>
+                A propos du, <br />
+                <span className="text-primary">Centanire</span>
               </h3>
 
               <div className="prose prose-lg text-muted-foreground space-y-6">

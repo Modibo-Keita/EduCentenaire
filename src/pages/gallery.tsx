@@ -103,7 +103,7 @@ export default function Gallery() {
                  </div>
                  <p className="text-xl font-serif font-bold text-primary mb-2">Bientôt disponible</p>
                  <p className="text-muted-foreground max-w-md text-center">
-                   Nous numérisons actuellement des bobines d'archives exceptionnelles qui seront dévoilées lors du centenaire.
+                   Nous numérisons actuellement des archives exceptionnelles qui seront dévoilées lors du centenaire.
                  </p>
               </div>
             </TabsContent>
@@ -142,7 +142,7 @@ function GalleryItem({ item }: { item: { src: string; title: string; category: s
           />
           <div className="p-4 bg-white absolute bottom-0 w-full">
             <h3 className="font-serif font-bold text-xl text-primary">{item.title}</h3>
-            <p className="text-sm text-muted-foreground">Archives EFK • Collection Historique</p>
+            <p className="text-sm text-muted-foreground">Archives GS-MMK • Collection Historique</p>
           </div>
         </div>
       </DialogContent>

@@ -58,7 +58,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               />
               <div className="hidden md:block">
                 <h1 className="font-serif font-bold text-lg text-primary leading-none">
-                  École Fondamentale
+                  GS-MMK
                 </h1>
                 <p className="text-sm text-muted-foreground tracking-widest uppercase">
                   de Kourouninkoto
@@ -141,11 +141,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 alt="EFK Logo"
                 className="h-10 brightness-0 invert opacity-80"
               />
-              <span className="font-serif font-bold text-xl">EFK - 1925</span>
+              <span className="font-serif font-bold text-xl">GS-MMK - 1925</span>
             </div>
             <p className="text-sm text-primary-foreground/70 max-w-xs mx-auto md:mx-0">
-              Célébrons un siècle d'éducation, de transmission et d'avenir à
-              Kourouninkoto, Mali.
+              Célébrons un siècle d'éducation, de savoir, de transmission et de fierté pour le village de
+              Kourouninkoto, le Kaarta et tout le Mali.
             </p>
           </div>
 

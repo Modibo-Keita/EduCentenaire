@@ -82,7 +82,7 @@ export default function History() {
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed font-light">
               De 1925 à nos jours, découvrez les grandes étapes qui ont façonné
-              l'École Fondamentale de Kourouninkoto.
+              Groupe Scolaire Mamadou Madéira Keita de Kourouninkoto.
             </p>
           </div>
         </div>

@@ -170,15 +170,15 @@ export default function DonorsTable({ donors }) {
 
       {/* Export */}
       <div className="flex gap-3 mt-4">
-        <button onClick={exportExcel} className="btn">
+        <button onClick={exportExcel} className="btn bg-yellow-400 px-3 rounded-2xl">
           Excel
         </button>
-        <button onClick={exportPDF} className="btn bg-red-600 text-white">
+        <button onClick={exportPDF} className="btn bg-primary text-white px-3 rounded-2xl">
           PDF
         </button>
       </div>
 
-      <div className="mt-4 p-3 bg-primary/10 rounded-xl font-bold">
+      <div className="mt-4 p-3 bg-green-300 rounded-xl font-bold">
         Total collecté : {totalAmount.toLocaleString()} FCFA
       </div>
     </motion.div>

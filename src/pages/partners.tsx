@@ -143,7 +143,7 @@ export default function Partners() {
           <div className="mb-24">
             <h3 className="text-2xl font-serif font-bold text-center text-primary mb-12 relative">
               <span className="bg-background px-4 relative z-10">
-                Nos partenaires médiatiques
+                Partenaires Médiatiques
               </span>
               <span className="absolute top-1/2 left-0 right-0 h-px bg-border z-0"></span>
             </h3>
