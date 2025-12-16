@@ -43,11 +43,15 @@ export function Countdown() {
         { label: "Minutes", value: timeLeft.minutes },
         { label: "Secondes", value: timeLeft.seconds },
       ].map((item, i) => (
-        <div key={i} className="bg-black/70 backdrop-blur-sm border border-white/10 rounded-lg p-4 flex flex-col items-center animate-in fade-in zoom-in duration-500" style={{ animationDelay: `${i * 100}ms` }}>
-          <span className="text-3xl md:text-5xl font-serif font-bold text-secondary tabular-nums">
-            {item.value.toString().padStart(2, '0')}
+        <div
+          key={i}
+          className="bg-[#F2E9D8] backdrop-blur-sm border border-white/10 rounded-lg p-4 flex flex-col items-center animate-in fade-in zoom-in duration-500"
+          style={{ animationDelay: `${i * 100}ms` }}
+        >
+          <span className="text-3xl md:text-5xl font-serif font-bold text-[#7A1E2C] tabular-nums">
+            {item.value.toString().padStart(2, "0")}
           </span>
-          <span className="text-xs md:text-sm text-white/70 uppercase tracking-widest mt-1">
+          <span className="text-xs md:text-sm text-primary uppercase tracking-widest mt-1">
             {item.label}
           </span>
         </div>

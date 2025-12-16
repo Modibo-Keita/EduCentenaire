@@ -19,22 +19,22 @@ export default function Home() {
             alt="Paysage de Kourouninkoto"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-b from-primary/80 via-primary/40 to-background/95" />
+          <div className="absolute inset-0 bg-linear-to-b from-primary/80 via-primary/90 to-background/90" />
         </div>
-
+        {/* bg-linear-to-b from-primary/80 via-primary/40 to-background/95 */}
         <div className="container relative z-10 px-4 text-center max-w-5xl mx-auto py-20">
           <span className="inline-block px-6 py-2 mb-8 text-sm md:text-base font-bold tracking-widest text-secondary-foreground bg-secondary rounded-full uppercase shadow-lg animate-in fade-in slide-in-from-bottom-4 duration-700 border border-white/20">
             1925 - 2025
           </span>
 
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-2xl animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-2xl animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100 ">
             100 Ans d'Histoire <br />
-            <span className="text-secondary">d'Éducation & d'Avenir</span>
+            <span className="text-orange-300">d'Éducation & d'Avenir</span>
           </h1>
 
-          <p className="text-lg md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
+          <p className="text-lg md:text-2xl text-white mb-10 max-w-3xl mx-auto font-extralight leading-relaxed drop-shadow-md animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200 ">
             Bienvenue au Centenaire du Groupe Scolaire Mamadou Madéira Keita de
-            Kourouninkoto. Un siècle de savoir transmis au cœur du Mali.
+            Kourouninkoto. Un siècle de savoir transmis au cœur du Kaarta.
           </p>
 
           <Countdown />
@@ -43,7 +43,7 @@ export default function Home() {
             <Link href="/programme">
               <Button
                 size="lg"
-                className="bg-[#C9A227] hover:bg-[#d8b547] text-[#0D1B2A] font-serif px-10 py-7 text-lg h-auto shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 rounded-full border-2 border-transparent"
+                className="bg-[#1B3557] hover:bg-[#E9FBEF] text-[#FFFFFF] font-serif px-10 py-7 text-lg h-auto shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 rounded-full border-2 border-transparent hover:text-primary"
               >
                 Voir le Programme
                 <Calendar className="ml-3 h-5 w-5" />
@@ -53,7 +53,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-[#1B3557] backdrop-blur-sm border-white/40 text-white hover:bg-blue-300 hover:text-primary font-serif px-10 py-7 text-lg h-auto rounded-full hover:border-white transition-all"
+                className="bg-[#1B3557] backdrop-blur-sm border-white/40 text-white hover:bg-[#E9FBEF] hover:text-primary font-serif px-10 py-7 text-lg h-auto rounded-full hover:border-white transition-all"
               >
                 Notre Histoire
                 <ArrowRight className="ml-3 h-5 w-5" />

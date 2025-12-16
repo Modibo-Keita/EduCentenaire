@@ -90,4 +90,34 @@ export const donors: Donor[] = [
     residence: "Espagne",
     amount: 5000,
   },
+  {
+    name: "Alassane Touré",
+    village: "Kourouninkoto",
+    residence: "Ségpu",
+    amount: 200000,
+  },
+  {
+    name: "Sanguimba Kéita",
+    village: "Inconnu",
+    residence: "Faladié",
+    amount: 50000,
+  },
+  {
+    name: "Colonel Moussa Boly",
+    village: "Inconnu",
+    residence: "Niamana",
+    amount: 50000,
+  },
+  {
+    name: "Sékou Magassa",
+    village: "Séféto",
+    residence: " Paris",
+    amount: 725000,
+  },
+  // {
+  //   name: " ",
+  //   village: " ",
+  //   residence: " ",
+  //   amount: 10000,
+  // },
 ];
