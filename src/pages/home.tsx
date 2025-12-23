@@ -146,6 +146,67 @@ export default function Home() {
       {/* Committee Section */}
       <Committee />
 
+      {/* memorandum */}
+      <section className="py-20 bg-muted/40">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            {/* Titre */}
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+                Mémoire & Héritage
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Mémorandum en hommage à l’École Fondamentale de Kourouninkoto
+              </p>
+            </div>
+
+            {/* Carte mémorandum */}
+            <div className="bg-background border border-primary/20 rounded-2xl shadow-lg p-8 md:p-12 font-serif leading-relaxed text-foreground">
+              <p className="text-center font-bold mb-6">
+                MÉMORANDUM POUR LE CENTENAIRE DE L’ÉCOLE FONDAMENTALE DE
+                KOUROUNINKOTO
+              </p>
+
+              <div className="space-y-4 text-justify">
+                <p className="italic text-center">Hommage à toi !</p>
+
+                <p>
+                  École de Kourouninkoto, mère éducatrice. Tu fus d’une utilité
+                  inestimable. Jadis, les fils de plus d’une trentaine de
+                  villages convergeaient sur toi pour s’abreuver de ton savoir
+                  que tu leur prodiguais avidement.
+                </p>
+
+                <p>
+                  Nous ne t’avons pas oubliée et nous ne t’oublierons jamais. Tu
+                  vis en chacun de nous et chacun de nous te porte dans son
+                  cœur.
+                </p>
+
+                <p>
+                  Une glorieuse période durant laquelle furent formées
+                  d’excellentes promotions qui ont donné naissance à de grands
+                  intellectuels, parmi lesquels l’un des pères fondateurs de
+                  l’indépendance de notre grand Mali.
+                </p>
+
+                <p>
+                  Tes fils et petits-fils ont poursuivi ton œuvre, devenant
+                  d’éminents docteurs, professeurs et cadres valeureux de
+                  l’administration publique.
+                </p>
+
+                <p className="font-semibold text-center pt-6">
+                  Vive l’École de Kourouninkoto
+                  <br />
+                  Vive l’École malienne
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Journey Map Section */}
       <JourneyMap />
 
