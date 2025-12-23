@@ -81,8 +81,7 @@ export default function History() {
               100 ans d'Histoire
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed font-light">
-              De 1925 à nos jours, découvrez les grandes étapes qui ont façonné
-              Groupe Scolaire Mamadou Madéira Keita de Kourouninkoto.
+              De 1925 à nos jours, découvrez les grandes étapes qui ont façonné l'école fondamentale Mamadou Madéira Keita de Kourouninkoto.
             </p>
           </div>
         </div>
@@ -166,11 +165,11 @@ export default function History() {
       {/* <FirstPromotion /> */}
       <div className="container mx-auto px-4 py-12">
         <h2 className="text-3xl font-serif font-bold mb-8 text-primary">
-          Première Promotion (1925)
+          Promtions Emblématiques (1925 - 2025)
         </h2>
 
         <p className="text-muted-foreground max-w-2xl mb-10">
-          Retrouvez la première génération d'élèves qui ont marqué le début de
+          Retrouvez ici quelques générations d'élèves qui ont marqué
           notre grande aventure éducative.
         </p>
 

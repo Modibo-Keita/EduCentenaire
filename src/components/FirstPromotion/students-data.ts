@@ -11,7 +11,7 @@ export interface Student {
 
 export const firstPromotionStudents: Student[] = [
   {
-    name: "Madeira Keita",
+    name: "Madeira Kéïta",
     village: "Kourouninkoto",
     year: 1925,
     photo: madeira,
@@ -29,7 +29,7 @@ export const firstPromotionStudents: Student[] = [
     photo: placeholder,
   },
   {
-    name: "Tapa Keita",
+    name: "Tapa Kéïta",
     village: "Didenko",
     year: 1925,
     photo: placeholder,
@@ -89,13 +89,13 @@ export const firstPromotionStudents: Student[] = [
     photo: placeholder,
   },
   {
-    name: "Keman Keita",
+    name: "Keman Kéïta",
     village: "Guetala",
     year: 1925,
     photo: placeholder,
   },
   {
-    name: "Kamissa Namake Keita",
+    name: "Kamissa Namake Kéïta",
     village: "Karega",
     year: 1925,
     photo: placeholder,
@@ -138,8 +138,8 @@ export const firstPromotionStudents: Student[] = [
   },
   //   d'autres promotions
   {
-    name: "Mamadou N Keita Moro ",
-    village: "Farena ",
+    name: "Mamadou N. Kéïta dit Moro ",
+    village: "Faréna ",
     year: 1960,
     photo: placeholder,
   },
@@ -180,13 +180,13 @@ export const firstPromotionStudents: Student[] = [
     photo: placeholder,
   },
   {
-    name: "Oudé Keita",
+    name: "Oudé Kéïta",
     village: "Faréna",
     year: 1996,
     photo: placeholder,
   },
   {
-    name: "Bana Keita",
+    name: "Bana Kéïta",
     village: "Faréna",
     year: 1996,
     photo: placeholder,
@@ -210,7 +210,7 @@ export const firstPromotionStudents: Student[] = [
     photo: placeholder,
   },
   {
-    name: "Balla Keita",
+    name: "Balla Kéïta",
     village: "Guétala",
     year: 2010,
     photo: placeholder,
@@ -222,26 +222,26 @@ export const firstPromotionStudents: Student[] = [
     photo: placeholder,
   },
   {
-    name: "Modibo D. Keita",
-    village: "Farena",
+    name: "Modibo D. Kéïta",
+    village: "Faréna",
     year: 2010,
     photo: placeholder,
   },
   {
-    name: "Diakaridia Keita",
-    village: "Farena",
+    name: "Diakaridia Kéïta",
+    village: "Faréna",
     year: 2008,
     photo: placeholder,
   },
   {
-    name: "Mamou Keita",
-    village: "Farena",
+    name: "Mamou Kéïta",
+    village: "Faréna",
     year: 2008,
     photo: placeholder,
   },
   {
-    name: "Mamadou Sayon Keita",
-    village: "Farena",
+    name: "Mamadou Sayon Kéïta",
+    village: "Faréna",
     year: 2008,
     photo: placeholder,
   },

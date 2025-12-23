@@ -90,32 +90,6 @@ export default function Home() {
                 </p>
               </div>
             </div> */}
-            {/* google map */}
-            <section className="py-16 bg-[#E9FBEF]">
-              <div className="container mx-auto px-4">
-                {/* Titre */}
-                <h2 className="text-3xl font-serif font-bold text-center text-primary mb-4">
-                  Localisation de Kourouninkoto
-                </h2>
-                <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-10">
-                  Découvrez où se situe Kourouninkoto, berceau historique de
-                  l’École Fondamentale fondée il y a un siècle.
-                </p>
-
-                {/* Carte */}
-                <div className="w-full overflow-hidden rounded-2xl shadow-xl border border-border/40">
-                  <iframe
-                    title="Kourouninkoto Map"
-                    width="100%"
-                    height="380"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-2xl"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11497.58068432129!2d-10.856!3d13.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe51b0c8d32df9a7%3A0x8bc2c1d2e2ff2c26!2sKourouninkoto!5e1!3m2!1sfr!2sml!4v1706200000000"
-                  ></iframe>
-                </div>
-              </div>
-            </section>
 
             <div className="lg:w-1/2">
               <h2 className="text-black font-bold tracking-widest uppercase text-sm mb-4">
@@ -123,33 +97,30 @@ export default function Home() {
               </h2>
               <h3 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-8 leading-tight">
                 A propos du, <br />
-                <span className="text-primary">Centanire</span>
+                <span className="text-primary">Centenaire</span>
               </h3>
 
               <div className="prose prose-lg text-muted-foreground space-y-6">
                 <p>
-                  Situé au cœur de la région de Kita, Kourouninkoto est l''un
-                  des villages importants du Kaarta (un espace geographique
-                  herité du royaume historique massassi de Kaarta) mais surtout
-                  un village carrefour ce qui lui a valu de voir batir sur son
-                  sol, l'une des premières écoles du soudan français de la
-                  période coloniale. Une terre d'histoire de traditions de
-                  culture et d'hospitalité malienne. Fondée sur des terres
-                  fertiles et entourée de collines et d'arbres centenaires,
-                  notre communauté incarne l'harmonie entre tradition et
-                  ouverture vers l'avenir.
+                  Kourouninkoto est un village important du Kaarta, un espace
+                  historique hérité de l’ancien royaume Massassi de Kaarta.
+                  Village de passage et de rencontres, il a naturellement
+                  accueilli l’une des premières écoles du Soudan français à
+                  l’époque coloniale. Entouré de collines, de terres fertiles et
+                  d’arbres centenaires, le village est reconnu pour son
+                  histoire, sa culture et son hospitalité.
                 </p>
                 <p>
-                  Depuis 1925, notre village est le gardien de l'École
-                  Fondamentale, véritable institution qui a vu grandir des
-                  générations d'élèves. Kourouninkoto n'est pas seulement un
-                  lieu géographique, c'est une mémoire vivante, un espace où
-                  l'éducation est célébrée comme le pilier de notre
-                  développement commun.
+                  Depuis 100 ans, l’École Fondamentale de Kourouninkoto joue un
+                  rôle central dans la vie de la communauté. Elle a formé des
+                  générations d’élèves et continue d’être un pilier du
+                  développement local. Kourouninkoto, ce n’est pas seulement un
+                  lieu. C’est une mémoire vivante, où l’éducation est au cœur de
+                  l’avenir.
                 </p>
               </div>
 
-              <div className="mt-10 grid grid-cols-2 gap-6">
+              {/* <div className="mt-10 grid grid-cols-2 gap-6">
                 <div className="bg-secondary/10 p-6 rounded-lg border border-secondary/20">
                   <MapPin className="h-8 w-8 text-primary mb-3" />
                   <h4 className="font-bold text-foreground mb-1">
@@ -166,7 +137,7 @@ export default function Home() {
                     Accueillante & Historique
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -177,6 +148,33 @@ export default function Home() {
 
       {/* Journey Map Section */}
       <JourneyMap />
+
+      {/* google map */}
+      <section className="py-16 bg-[#E9FBEF]">
+        <div className="container mx-auto px-4">
+          {/* Titre */}
+          <h2 className="text-3xl font-serif font-bold text-center text-primary mb-4">
+            Localisation de Kourouninkoto
+          </h2>
+          <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-10">
+            Découvrez où se situe Kourouninkoto, berceau historique de l’École
+            Fondamentale fondée il y a un siècle.
+          </p>
+
+          {/* Carte */}
+          <div className="w-full overflow-hidden rounded-2xl shadow-xl border border-border/40">
+            <iframe
+              title="Kourouninkoto Map"
+              width="100%"
+              height="380"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-2xl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11497.58068432129!2d-10.856!3d13.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe51b0c8d32df9a7%3A0x8bc2c1d2e2ff2c26!2sKourouninkoto!5e1!3m2!1sfr!2sml!4v1706200000000"
+            ></iframe>
+          </div>
+        </div>
+      </section>
 
       {/* Key Info Grid */}
       <section className="py-20 bg-primary text-white">
