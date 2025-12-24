@@ -108,7 +108,7 @@ export function Committee() {
                 </p>
               </div>
 
-              <div className="bg-primary text-white rounded-2xl p-6 shadow-lg">
+              {/* <div className="bg-primary text-white rounded-2xl p-6 shadow-lg">
                 <h4 className="font-serif font-bold text-lg mb-4 text-secondary">
                   Domaines d'Action
                 </h4>
@@ -134,7 +134,7 @@ export function Committee() {
                     <span>Protocole & cérémonies</span>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
               <div className="bg-background border-2 border-secondary/30 rounded-2xl p-6">
                 <p className="text-xs text-center text-muted-foreground">

@@ -19,7 +19,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { label: "Témoignages", href: "/temoignages" },
     { label: "Hommages", href: "/hommages" },
     { label: "Partenaires", href: "/partenaires" },
-    { label: "Faire un Don", href: "/don" },
+    { label: "Donation", href: "/don" },
   ];
 
   useEffect(() => {

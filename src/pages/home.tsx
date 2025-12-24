@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
 import heroBg from "@assets/generated_images/vintage_1970s_class_photo_mali.png";
-import villageImg from "@assets/EFK_Images/kita_map_mali.png";
+// import villageImg from "@assets/EFK_Images/kita_map_mali.png";
 import { Countdown } from "@/components/countdown";
 import { Committee } from "@/components/committee";
 import { JourneyMap } from "@/components/journey-map";
@@ -74,23 +74,6 @@ export default function Home() {
       <section className="py-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-16">
-            {/* <div className="lg:w-1/2 relative">
-              <div className="absolute -inset-4 bg-secondary/20 rounded-2xl transform rotate-3"></div>
-              <img
-                src={villageImg}
-                alt="Village de Kourouninkoto"
-                className="relative rounded-xl shadow-2xl w-full aspect-4/3 object-cover transform -rotate-2 hover:rotate-0 transition-transform duration-500"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-xl max-w-[200px] hidden md:block">
-                <p className="font-serif font-bold text-primary text-lg">
-                  Kourouninkoto
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  Région de Kita, Mali
-                </p>
-              </div>
-            </div> */}
-
             <div className="lg:w-1/2">
               <h2 className="text-black font-bold tracking-widest uppercase text-sm mb-4">
                 Le Berceau de l'École
@@ -99,7 +82,6 @@ export default function Home() {
                 A propos du, <br />
                 <span className="text-primary">Centenaire</span>
               </h3>
-
               <div className="prose prose-lg text-muted-foreground space-y-6">
                 <p>
                   Kourouninkoto est un village important du Kaarta, un espace
@@ -119,25 +101,6 @@ export default function Home() {
                   l’avenir.
                 </p>
               </div>
-
-              {/* <div className="mt-10 grid grid-cols-2 gap-6">
-                <div className="bg-secondary/10 p-6 rounded-lg border border-secondary/20">
-                  <MapPin className="h-8 w-8 text-primary mb-3" />
-                  <h4 className="font-bold text-foreground mb-1">
-                    Localisation
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    Région de Kita, Ouest du Mali
-                  </p>
-                </div>
-                <div className="bg-secondary/10 p-6 rounded-lg border border-secondary/20">
-                  <Users className="h-8 w-8 text-primary mb-3" />
-                  <h4 className="font-bold text-foreground mb-1">Communauté</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Accueillante & Historique
-                  </p>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -177,23 +140,45 @@ export default function Home() {
                   que tu leur prodiguais avidement.
                 </p>
 
+                <p className="italic text-center">Hommage à toi !</p>
+
                 <p>
-                  Nous ne t’avons pas oubliée et nous ne t’oublierons jamais. Tu
-                  vis en chacun de nous et chacun de nous te porte dans son
-                  cœur.
+                  École de Kourouninkoto, Nous ne t’avons pas oubliée et nous ne
+                  t’oublierons jamais. Tu vis en chacun de nous et chacun de
+                  nous te porte dans son cœur.
                 </p>
 
                 <p>
-                  Une glorieuse période durant laquelle furent formées
-                  d’excellentes promotions qui ont donné naissance à de grands
-                  intellectuels, parmi lesquels l’un des pères fondateurs de
-                  l’indépendance de notre grand Mali.
+                  Tu viens d'avoir cent ans <br /> Que nous montrent tes cent
+                  ans d'existence ?
+                </p>
+                <p></p>
+
+                <p>
+                  Une glorieuse période dans laquelle ont été courageusement et
+                  méthodiquement formées d’excellentes promotions qui ont donné
+                  comme fruits de grands intellectuels. Tu jouis de l’insigne
+                  honneur d’avoir fourni l’un des pères fondateurs de
+                  l’indépendance de notre grand Mali. Qui ? Le premier élève
+                  inscrit dans ton enceinte, notre père, notre oncle, notre
+                  grand-père Mamadou Madéïra Kéïta, fut Ministre de l’Intérieur
+                  du Gouvernement du Président Modibo Keita, entre 1960 et 1968.
                 </p>
 
                 <p>
-                  Tes fils et petits-fils ont poursuivi ton œuvre, devenant
-                  d’éminents docteurs, professeurs et cadres valeureux de
-                  l’administration publique.
+                  Ses fils et ses petits-fils emboîtèrent le pas, plusieurs
+                  parmi eux furent d’éminents docteurs, de brillants professeurs
+                  d’enseignement et beaucoup d’autres cadres valables de
+                  l’administration publique de notre chère patrie.
+                </p>
+                <p className="italic text-center">Hommage à toi !</p>
+                <p className="italic text-center">
+                  Célèbre École de Kourouninkoto !
+                </p>
+                <p>
+                  Pour te rassurer, nous réitérons notre serment : nous ne
+                  t’avons pas oubliée, nous ne t’oublierons point. Tu vis en
+                  chacun de nous et chacun de nous te porte dans son cœur.
                 </p>
 
                 <p className="font-semibold text-center pt-6">
